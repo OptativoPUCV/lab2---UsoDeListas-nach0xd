@@ -43,9 +43,9 @@ Al finalizar retorna la lista creada.
 
 List* crea_lista() {
    List* L = create_list();
-   int *i;
+   int i;
   for (i = 1; i <= 10; i++) {
-    pushFront(L, i);
+    pushFront(L, &i);
   }
    return L;
 }
