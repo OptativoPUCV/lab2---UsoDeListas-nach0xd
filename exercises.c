@@ -100,9 +100,7 @@ void copia_pila(Stack* P1, Stack* P2) {
   while ((dato = pop(P3)) != NULL) {
     push(P1, dato);
   }
-  while (dato = pop(P3)) {
-    push(P2, dato);
-  }
+  
   
 }
 /*
@@ -113,7 +111,6 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 */
 
 int parentesisBalanceados(char *cadena) {
-  char *dato = first(cadena);
    return 0;
 }
 
