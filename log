@@ -55,3 +55,17 @@ Wed 20 Mar 2024 06:28:41 PM UTC:
  tests:  2|3
 total_score: 30/70
 2dc11ad
+Wed 20 Mar 2024 06:30:05 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:47:10: error: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   47 |   for (i = 1; i <= 10; i++) {
+      |          ^
+exercises.c:47:17: error: comparison between pointer and integer [-Werror]
+   47 |   for (i = 1; i <= 10; i++) {
+      |                 ^~
+cc1: all warnings being treated as errors
+Compilation failed
+5cfb2a9
