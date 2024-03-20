@@ -1,0 +1,21 @@
+Wed 20 Mar 2024 06:16:27 PM UTC: 
+ exercises.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:47:28: error: expected statement before ‘)’ token
+   47 |   for (i = 1; i <= 10; i++)) {
+      |                            ^
+exercises.c:47:3: error: this ‘for’ clause does not guard... [-Werror=misleading-indentation]
+   47 |   for (i = 1; i <= 10; i++)) {
+      |   ^~~
+exercises.c:47:30: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+   47 |   for (i = 1; i <= 10; i++)) {
+      |                              ^
+exercises.c:48:5: error: implicit declaration of function ‘push_back’; did you mean ‘pushBack’? [-Werror=implicit-function-declaration]
+   48 |     push_back(L, &i);
+      |     ^~~~~~~~~
+      |     pushBack
+cc1: all warnings being treated as errors
+Compilation failed
+70477e1
