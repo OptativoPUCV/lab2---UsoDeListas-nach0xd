@@ -104,3 +104,29 @@ Wed 20 Mar 2024 06:51:00 PM UTC:
  tests:  3|2
 total_score: 40/70
 4c22a1a
+Wed 20 Mar 2024 06:57:28 PM UTC: 
+ exercises.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:103:10: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+  103 |   while (dato = pop(P3)) {
+      |          ^~~~
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:116:22: error: passing argument 1 of ‘first’ from incompatible pointer type [-Werror=incompatible-pointer-types]
+  116 |   char *dato = first(cadena);
+      |                      ^~~~~~
+      |                      |
+      |                      char *
+In file included from exercises.c:6,
+                 from test.c:5:
+arraylist.h:10:19: note: expected ‘List *’ but argument is of type ‘char *’
+   10 | void* first(List *L);
+      |             ~~~~~~^
+In file included from test.c:5:
+exercises.c:116:9: error: unused variable ‘dato’ [-Werror=unused-variable]
+  116 |   char *dato = first(cadena);
+      |         ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+92ec903
