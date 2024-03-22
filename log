@@ -251,3 +251,17 @@ Fri 22 Mar 2024 10:27:54 PM UTC:
  tests:  5|1
 total_score: 50/70
 2989aa3
+Fri 22 Mar 2024 10:42:01 PM UTC: 
+ exercises.c | 25 +++++++++++++------------
+ 1 file changed, 13 insertions(+), 12 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:129:30: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+  129 |         if (cadena[i] == ')' && *dato != '(' || cadena[i] == ']' && *dato != '[' || cadena[i] == '}' && *dato != '{') {
+      |             ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+exercises.c:129:102: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+  129 |         if (cadena[i] == ')' && *dato != '(' || cadena[i] == ']' && *dato != '[' || cadena[i] == '}' && *dato != '{') {
+      |                                                                                     ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+642f412
